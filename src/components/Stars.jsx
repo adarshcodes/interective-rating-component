@@ -7,28 +7,45 @@ import emoji4 from ".././assets/images/4star.png";
 import emoji5 from ".././assets/images/5star.png";
 
 const Stars = () => {
+	const starData = [
+		{
+			id: 1,
+			value: 1,
+			imgSrc: emoji1,
+		},
+		{
+			id: 2,
+			value: 2,
+			imgSrc: emoji2,
+		},
+		{
+			id: 3,
+			value: 3,
+			imgSrc: emoji3,
+		},
+		{
+			id: 4,
+			value: 4,
+			imgSrc: emoji4,
+		},
+		{
+			id: 5,
+			value: 5,
+			imgSrc: emoji5,
+		},
+	];
+	// const [selectedStar, setSelectedStar] = React.useState([]);
+
 	return (
 		<div className="stars">
-			<div className="star">
-				1
-				<img src={emoji1} alt="emoji1" />
-			</div>
-			<div className="star">
-				2
-				<img src={emoji2} alt="emoji2" />
-			</div>
-			<div className="star">
-				3
-				<img src={emoji3} alt="emoji3" />
-			</div>
-			<div className="star">
-				4
-				<img src={emoji4} alt="emoji4" />
-			</div>
-			<div className="star">
-				5
-				<img src={emoji5} alt="emoji5" />
-			</div>
+			{starData.map((stars) => {
+				return (
+					<div className="star" key={stars.id}>
+						{stars.value}
+						<img src={stars.imgSrc} alt="emojies" />
+					</div>
+				);
+			})}
 		</div>
 	);
 };

@@ -66,13 +66,13 @@
 		}
 
 		&:hover img {
-			transform: scale(5);
+			transform: scale(5) translate(-0.2px, -0.1px);
 			opacity: 1;
 			visibility: visible;
 		}
 
 		&:active img {
-			transform: scale(4);
+			transform: scale(4) translate(-0.2px, -0.1px);
 		}
 	}
 }
@@ -94,9 +94,22 @@
 
 	&:hover {
 		transform: translateY(-0.1rem);
+		background-color: $White;
+		color: $Orange;
 	}
 
 	&:active {
 		transform: scale(0.9);
 	}
+}
+
+.star-selected {
+	background-color: $Orange !important;
+	color: $White !important;
+}
+
+.start-hold {
+	transform: scale(5) translate(-0.2px, -0.1px);
+	opacity: 1;
+	visibility: visible;
 }

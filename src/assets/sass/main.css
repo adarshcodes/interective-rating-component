@@ -97,13 +97,13 @@ body {
 }
 
 .stars .star:hover img {
-  transform: scale(5);
+  transform: scale(5) translate(-0.2px, -0.1px);
   opacity: 1;
   visibility: visible;
 }
 
 .stars .star:active img {
-  transform: scale(4);
+  transform: scale(4) translate(-0.2px, -0.1px);
 }
 
 .submit-button {
@@ -124,9 +124,22 @@ body {
 
 .submit-button:hover {
   transform: translateY(-0.1rem);
+  background-color: white;
+  color: #fb7413;
 }
 
 .submit-button:active {
   transform: scale(0.9);
+}
+
+.star-selected {
+  background-color: #fb7413 !important;
+  color: white !important;
+}
+
+.start-hold {
+  transform: scale(5) translate(-0.2px, -0.1px);
+  opacity: 1;
+  visibility: visible;
 }
 /*# sourceMappingURL=main.css.map */
