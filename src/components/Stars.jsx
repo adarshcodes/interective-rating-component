@@ -34,6 +34,7 @@ const Stars = () => {
 			imgSrc: emoji5,
 		},
 	];
+
 	// const [selectedStar, setSelectedStar] = React.useState([]);
 
 	return (
