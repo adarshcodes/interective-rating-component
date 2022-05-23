@@ -52,6 +52,10 @@
 		font-size: 1.7rem;
 		font-weight: 700;
 
+		&:hover {
+			background-color: $Orange;
+		}
+
 		&:not(:last-child) {
 			margin-right: 2.33rem;
 		}
@@ -72,7 +76,7 @@
 		}
 
 		&:active img {
-			transform: scale(4) translate(-0.2px, -0.1px);
+			transform: scale(5) translate(-0.2px, -0.1px);
 		}
 	}
 }
@@ -104,11 +108,11 @@
 }
 
 .star-selected {
-	background-color: $Orange !important;
+	background-color: $Medium-Grey !important;
 	color: $White !important;
 }
 
-.start-hold {
+.show-emoji {
 	transform: scale(5) translate(-0.2px, -0.1px);
 	opacity: 1;
 	visibility: visible;

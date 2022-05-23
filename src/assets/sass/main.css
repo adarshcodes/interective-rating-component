@@ -83,6 +83,10 @@ body {
   font-weight: 700;
 }
 
+.stars .star:hover {
+  background-color: #fb7413;
+}
+
 .stars .star:not(:last-child) {
   margin-right: 2.33rem;
 }
@@ -103,7 +107,7 @@ body {
 }
 
 .stars .star:active img {
-  transform: scale(4) translate(-0.2px, -0.1px);
+  transform: scale(5) translate(-0.2px, -0.1px);
 }
 
 .submit-button {
@@ -133,11 +137,11 @@ body {
 }
 
 .star-selected {
-  background-color: #fb7413 !important;
+  background-color: #7c8798 !important;
   color: white !important;
 }
 
-.start-hold {
+.show-emoji {
   transform: scale(5) translate(-0.2px, -0.1px);
   opacity: 1;
   visibility: visible;
