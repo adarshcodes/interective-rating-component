@@ -3,6 +3,10 @@
 	width: 100%;
 	background-color: $Very-Dark-Blue;
 	padding: 20.55rem 0;
+
+	@media screen and (max-width: 700px) {
+		padding: 10rem 0;
+	}
 }
 
 .card {
@@ -10,6 +14,14 @@
 	width: 43.47rem;
 	border-radius: 3rem;
 	padding: 3.45rem;
+
+	@media screen and (max-width: 700px) {
+		width: 80%;
+	}
+
+	@media screen and (max-width: 390px) {
+		width: 90%;
+	}
 
 	.star-img {
 		width: 5rem;
@@ -40,6 +52,10 @@
 	align-content: center;
 	margin-top: 2.65rem;
 
+	@media screen and (max-width: 700px) {
+		justify-content: space-between;
+	}
+
 	.star {
 		position: relative;
 		cursor: pointer;
@@ -51,6 +67,15 @@
 		@include flex-row-center;
 		font-size: 1.7rem;
 		font-weight: 700;
+
+		@media screen and (max-width: 700px) {
+			margin-right: 0 !important;
+		}
+
+		@media screen and (max-width: 430px) {
+			width: 4rem;
+			height: 4rem;
+		}
 
 		&:hover {
 			background-color: $Orange;
@@ -73,10 +98,18 @@
 			transform: scale(5) translate(-0.2px, -0.1px);
 			opacity: 1;
 			visibility: visible;
+
+			@media screen and (max-width: 430px) {
+				transform: scale(4) translate(-0.2px, -0.1px);
+			}
 		}
 
 		&:active img {
 			transform: scale(5) translate(-0.2px, -0.1px);
+
+			@media screen and (max-width: 430px) {
+				transform: scale(4) translate(-0.2px, -0.1px);
+			}
 		}
 	}
 }
@@ -94,6 +127,10 @@
 	border-radius: 2.5rem;
 	transition: all 0.3s;
 	cursor: not-allowed;
+
+	@media screen and (max-width: 500px) {
+		padding: 1rem 0;
+	}
 }
 
 .button-enabled {
