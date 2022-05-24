@@ -112,7 +112,7 @@ body {
 
 .submit-button {
   text-align: center;
-  background-color: #fb7413;
+  background-color: #7c8798;
   text-transform: uppercase;
   color: white;
   font-weight: 700;
@@ -121,23 +121,28 @@ body {
   margin-top: 3.5rem;
   padding: 1.4rem 0;
   border-radius: 2.5rem;
-  cursor: pointer;
   transition: all 0.3s;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
-.submit-button:hover {
+.button-enabled {
+  color: white !important;
+  background-color: #fb7413 !important;
+  cursor: pointer !important;
+}
+
+.button-enabled:hover {
   transform: translateY(-0.1rem);
   background-color: white;
   color: #fb7413;
 }
 
-.submit-button:active {
+.button-enabled:active {
   transform: scale(0.9);
 }
 
 .star-selected {
-  background-color: #7c8798 !important;
+  background-color: #959eac !important;
   color: white !important;
 }
 
@@ -145,5 +150,72 @@ body {
   transform: scale(5) translate(-0.2px, -0.1px);
   opacity: 1;
   visibility: visible;
+}
+
+.thank-you-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.7rem;
+  position: relative;
+}
+
+.thank-you-container .re-rate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you-container .re-rate:hover {
+  background-color: #252d37;
+  transform: rotate(360deg);
+  color: #fb7413;
+}
+
+.thank-you-container .re-rate:active {
+  transform: scale(0.9);
+}
+
+.thank-you-container img {
+  margin-top: 1.1rem;
+  width: 17rem;
+}
+
+.thank-you-container .stars-given {
+  margin-top: 3.5rem;
+  padding: 0.7rem 3rem;
+  border-radius: 2rem;
+  background-color: #252d37;
+}
+
+.thank-you-container .stars-given p {
+  font-style: 1.5rem;
+  color: #fb7413;
+}
+
+.thank-you-container .thanks-heading {
+  margin-top: 3.5rem;
+  font-size: 2.9rem;
+  margin-bottom: 1.3rem;
+  color: white;
+}
+
+.thank-you-container .thanks-para {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #959eac;
 }
 /*# sourceMappingURL=main.css.map */

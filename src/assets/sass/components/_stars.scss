@@ -83,7 +83,7 @@
 
 .submit-button {
 	text-align: center;
-	background-color: $Orange;
+	background-color: $Medium-Grey;
 	text-transform: uppercase;
 	color: $White;
 	font-weight: 700;
@@ -92,9 +92,14 @@
 	margin-top: 3.5rem;
 	padding: 1.4rem 0;
 	border-radius: 2.5rem;
-	cursor: pointer;
 	transition: all 0.3s;
-	cursor: pointer;
+	cursor: not-allowed;
+}
+
+.button-enabled {
+	color: $White !important;
+	background-color: $Orange !important;
+	cursor: pointer !important;
 
 	&:hover {
 		transform: translateY(-0.1rem);
@@ -108,7 +113,7 @@
 }
 
 .star-selected {
-	background-color: $Medium-Grey !important;
+	background-color: $Light-Grey !important;
 	color: $White !important;
 }
 
@@ -116,4 +121,66 @@
 	transform: scale(5) translate(-0.2px, -0.1px);
 	opacity: 1;
 	visibility: visible;
+}
+
+.thank-you-container {
+	@include flex-column-center;
+	text-align: center;
+	margin-bottom: 1.7rem;
+	position: relative;
+
+	.re-rate {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 1.6rem;
+		color: $White;
+		cursor: pointer;
+		transition: all 0.3s;
+		padding: 1rem;
+		border-radius: 50%;
+		width: 3rem;
+		height: 3rem;
+		@include flex-row-center;
+
+		&:hover {
+			background-color: $Dark-Blue;
+			transform: rotate(360deg);
+			color: $Orange;
+		}
+
+		&:active {
+			transform: scale(0.9);
+		}
+	}
+
+	img {
+		margin-top: 1.1rem;
+		width: 17rem;
+	}
+
+	.stars-given {
+		margin-top: 3.5rem;
+		padding: 0.7rem 3rem;
+		border-radius: 2rem;
+		background-color: $Dark-Blue;
+
+		p {
+			font-style: 1.5rem;
+			color: $Orange;
+		}
+	}
+
+	.thanks-heading {
+		margin-top: 3.5rem;
+		font-size: 2.9rem;
+		margin-bottom: 1.3rem;
+		color: $White;
+	}
+
+	.thanks-para {
+		font-size: 1.6rem;
+		line-height: 2.4rem;
+		color: $Light-Grey;
+	}
 }
