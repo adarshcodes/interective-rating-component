@@ -24,7 +24,10 @@ export default function Rate({
 					selectedStar={selectedStar}
 				/>
 			</div>
-			<div className="submit-button" onClick={submit}>
+			<div
+				className={`submit-button ${selectedStar > 0 ? "button-enabled" : ""}`}
+				onClick={submit}
+			>
 				Submit
 			</div>
 		</div>
