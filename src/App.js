@@ -1,6 +1,8 @@
 import React from "react";
 import "./assets/sass/main.css";
 import Rate from "./components/Rate";
+import ThankYou from "./components/ThankYou";
+
 import starIcon from "./assets/images/icon-star.svg";
 import thanks from "./assets/images/illustration-thank-you.svg";
 import emoji1 from "./assets/images/1star.png";
@@ -68,20 +70,11 @@ function App() {
 						submit={submitRatings}
 					/>
 				) : (
-					<div className="thank-you-container" submit={submitRatings}>
-						<div className="re-rate" onClick={submitRatings}>
-							<i class="fa-solid fa-arrow-rotate-right reload"></i>
-						</div>
-						<img src={thanks} alt="thanks-illustrations" />
-						<div className="stars-given">
-							<p>You selected {selectedStar} out of 5</p>
-						</div>
-						<h2 className="thanks-heading">Thank you!</h2>
-						<p className="thanks-para">
-							We appreciate you taking the time to give a rating. if you ever
-							need more support , don't hesitate to get in touch!
-						</p>
-					</div>
+					<ThankYou
+						submit={submitRatings}
+						thanks={thanks}
+						selectedStar={selectedStar}
+					/>
 				)}
 			</div>
 		</main>
